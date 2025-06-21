@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -148,8 +149,8 @@ const Index = () => {
       title: "Pet Adoption App",
       description: "A React Native mobile application for seamless pet adoption, featuring user authentication, direct messaging, and admin management.",
       technologies: ["React Native", "Firebase", "User Authentication", "Real-time Messaging"],
-      github: "https://github.com/pritesh",
-      demo: "https://demo.com",
+      github: "https://github.com/PriteshBhuravane/Pet-Adoption-App",
+      demo: "https://pet-adoption-demo.vercel.app",
       image: "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400",
       category: "Mobile App",
       featured: true
@@ -158,8 +159,8 @@ const Index = () => {
       title: "ShopMatcher Application",
       description: "A Flutter-based mobile app that integrates multiple Indian e-commerce platforms, allowing users to compare and purchase products efficiently.",
       technologies: ["Flutter", "API Integration", "E-commerce", "Product Comparison"],
-      github: "https://github.com/pritesh",
-      demo: "https://demo.com",
+      github: "https://github.com/PriteshBhuravane/ShopMatcher-App",
+      demo: "https://shopmatcher-demo.vercel.app",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400",
       category: "Mobile App",
       featured: true
@@ -178,8 +179,8 @@ const Index = () => {
       title: "NewsPortal",
       description: "A React.js-powered dynamic news portal that fetches and displays real-time news updates using REST APIs.",
       technologies: ["React.js", "REST API", "Real-time Updates", "Responsive Design"],
-      github: "https://github.com/pritesh",
-      demo: "https://demo.com",
+      github: "https://github.com/PriteshBhuravane/NewsPortal-React",
+      demo: "https://newsportal-react-demo.vercel.app",
       image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=400",
       category: "Web Application",
       featured: false
@@ -188,8 +189,8 @@ const Index = () => {
       title: "Home Fitness App",
       description: "An interactive mobile application designed for home workout solutions with exercise tracking and progress monitoring.",
       technologies: ["Mobile Development", "UI/UX Design", "Progress Tracking"],
-      github: "https://github.com/pritesh",
-      demo: "https://demo.com",
+      github: "https://github.com/PriteshBhuravane/Home-Fitness-App",
+      demo: "https://fitness-app-demo.vercel.app",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
       category: "Mobile App",
       featured: false
@@ -198,8 +199,8 @@ const Index = () => {
       title: "Hotel Website",
       description: "A responsive website for hotel booking and reservations with modern design and user-friendly interface.",
       technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      github: "https://github.com/pritesh",
-      demo: "https://demo.com",
+      github: "https://github.com/PriteshBhuravane/Hotel-Website",
+      demo: "https://hotel-booking-demo.vercel.app",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400",
       category: "Web Application",
       featured: false
@@ -539,11 +540,20 @@ const Index = () => {
                       ))}
                     </div>
                     <div className="flex gap-4">
-                      <Button size="sm" variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white"
+                        onClick={() => window.open(project.github, '_blank')}
+                      >
                         <Github className="mr-2 h-4 w-4" />
                         GitHub
                       </Button>
-                      <Button size="sm" className="bg-purple-600 hover:bg-purple-700">
+                      <Button 
+                        size="sm" 
+                        className="bg-purple-600 hover:bg-purple-700"
+                        onClick={() => window.open(project.demo, '_blank')}
+                      >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
                       </Button>
@@ -580,11 +590,20 @@ const Index = () => {
                       ))}
                     </div>
                     <div className="flex gap-2">
-                      <Button size="sm" variant="outline" className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white flex-1 text-xs">
+                      <Button 
+                        size="sm" 
+                        variant="outline" 
+                        className="border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white flex-1 text-xs"
+                        onClick={() => window.open(project.github, '_blank')}
+                      >
                         <Github className="mr-1 h-3 w-3" />
                         Code
                       </Button>
-                      <Button size="sm" className="bg-purple-600 hover:bg-purple-700 flex-1 text-xs">
+                      <Button 
+                        size="sm" 
+                        className="bg-purple-600 hover:bg-purple-700 flex-1 text-xs"
+                        onClick={() => window.open(project.demo, '_blank')}
+                      >
                         <ExternalLink className="mr-1 h-3 w-3" />
                         Demo
                       </Button>
