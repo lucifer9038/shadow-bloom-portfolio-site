@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { Github, Linkedin, Twitter, Mail, Download, ExternalLink, Phone, MapPin, ChevronUp, Menu, X, Code, Palette, Database, Zap, Calendar, Award, BookOpen, Users, Camera, Music, Bike, Gamepad2, Globe, Smartphone, Monitor, Brain, Clock, MessageSquare, Target, Briefcase, FileText, Star, Trophy, Medal, GraduationCap, Certificate } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Download, ExternalLink, Phone, MapPin, ChevronUp, Menu, X, Code, Palette, Database, Zap, Calendar, Award, BookOpen, Users, Camera, Music, Bike, Gamepad2, Globe, Smartphone, Monitor, Brain, Clock, MessageSquare, Target, Briefcase, FileText, Star, Trophy, Medal, GraduationCap, ShieldCheck } from 'lucide-react';
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -211,7 +210,7 @@ const Index = () => {
     {
       title: "MS-CIT Certified",
       description: "Achieved 89% score in Maharashtra State Certificate in Information Technology",
-      icon: Certificate,
+      icon: ShieldCheck,
       category: "Certification"
     },
     {
@@ -618,7 +617,7 @@ const Index = () => {
                         return (
                           <div key={index} className="group">
                             <div className="flex items-center gap-3 mb-2">
-                              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                              <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
                                 <IconComponent className="h-4 w-4 text-white" />
                               </div>
                               <div className="flex-1">
@@ -703,7 +702,7 @@ const Index = () => {
               <Card className="bg-card/50 backdrop-blur-sm border border-purple-500/20 card-hover">
                 <CardHeader>
                   <CardTitle className="text-blue-400 flex items-center gap-3">
-                    <User className="h-6 w-6" />
+                    <Users className="h-6 w-6" />
                     Personal Information
                   </CardTitle>
                 </CardHeader>
