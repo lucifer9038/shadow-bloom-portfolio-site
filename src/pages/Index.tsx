@@ -168,8 +168,8 @@ const Index = () => {
       title: "E-Learning Website",
       description: "A Python Django-powered online learning platform with study material management, student records, and secure payment integration.",
       technologies: ["Python", "Django", "Payment Gateway", "User Management"],
-      github: "https://github.com/pritesh",
-      demo: "https://demo.com",
+      github: "https://github.com/PriteshBhuravane/E-Learning-Website.git",
+      demo: "https://e-learning-5uto.onrender.com/",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400",
       category: "Web Application",
       featured: false
